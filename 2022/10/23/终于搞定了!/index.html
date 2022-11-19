@@ -2149,7 +2149,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     root: '/',
     debug: "env",
     default: {"avatar":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/avatar/round/3442075.svg","link":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/cover/76b86c0226ffd.svg","image":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1668570078325),
+    lastupdate: new Date(1668842617165),
     cdn: {
       izitoast_css: 'https://cdn.bootcdn.net/ajax/libs/izitoast/1.4.0/css/iziToast.min.css',
       izitoast_js: 'https://cdn.bootcdn.net/ajax/libs/izitoast/1.4.0/js/iziToast.min.js',
@@ -2476,11 +2476,11 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
               <img src='https://unpkg.com/volantis-static@0.0.1660614606622/media/twemoji/assets/svg/1f4f0.svg'><p>博客</p>
             </a>
           
-            <a target="_blank" rel="noopener" href="https://github.com/volantis-x/hexo-theme-volantis/"
+            <a target="_blank" rel="noopener" href="https://github.com/lzy20110519/"
               
               
-              active-action="action-https:githubcomvolantis-xhexo-theme-volantis">
-              <img src='https://unpkg.com/volantis-static@0.0.1660614606622/media/twemoji/assets/svg/1f9ec.svg'><p>源码</p>
+              active-action="action-https:githubcomlzy20110519">
+              <img src='https://unpkg.com/volantis-static@0.0.1660614606622/media/twemoji/assets/svg/1f9ec.svg'><p>GitHub</p>
             </a>
           
         
@@ -2700,18 +2700,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
   
 
-
-  <article class="post white-box shadow floatable blur" id="comments">
-    <span hidden>
-      <meta itemprop="discussionUrl" content="/2022/10/23/%E7%BB%88%E4%BA%8E%E6%90%9E%E5%AE%9A%E4%BA%86!/index.html#comments">
-    </span>
-    <p ct><i class='fa-solid fa-comments'></i> 评论</p>
-    
-
-    <div id="layoutHelper-comments"></div>
-
-  </article>
-
+  
 
 
 
@@ -2983,32 +2972,6 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
 
 
-      <script type="text/javascript">
-  volantis.layoutHelper("comments",`<div id="gitalk-container"></div>`)
-  function pjax_gitalk() {
-    if(!document.querySelector("#gitalk-container"))return;
-    let path = pdata.commentPath;
-    if (path.length == 0) {
-      let defaultPath = '';
-      path = defaultPath || decodeURI(window.location.pathname);
-    }
-    if (document.getElementById('gitalk-container') != null) {
-      var gitalk = new Gitalk(
-        Object.assign(
-          Object.assign({"clientID":"cdd7c1a37f982ece5430","clientSecret":"aad72b7e995e86f567107459908df7fcfbb53d36","repo":null,"owner":null,"admin":null,"path":null}, {
-            id: path,
-            distractionFreeMode: false  // Facebook-like distraction free mode
-          }),
-        pdata.commentConfig)
-      );
-      gitalk.render('gitalk-container');
-    }
-  }
-  volantis.js('https://cdn.bootcdn.net/ajax/libs/gitalk/1.7.2/gitalk.min.js').then(pjax_gitalk)
-  volantis.pjax.push(pjax_gitalk);
-</script>
-
-    
 
 
 
